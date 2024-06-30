@@ -21,6 +21,7 @@ class FollowersListVC: UIViewController {
         configureViewController()
         GetFollowers(username: username, page: page)
         ConfigureDataSource()
+        configureSearchController()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -85,6 +86,13 @@ class FollowersListVC: UIViewController {
             self.datasource.apply(snapshot, animatingDifferences: true)
         }
     }
+    
+    func configureSearchController() {
+        let searchController = UISearchController()
+        searchController.searchResultsUpdater = self
+        searchController.searchBar.placeholder = "Search for a username"
+        navigationItem.searchController = searchController
+    }
 }
 
 extension FollowersListVC: UICollectionViewDelegate {
@@ -98,6 +106,12 @@ extension FollowersListVC: UICollectionViewDelegate {
             page += 1
             GetFollowers(username: username, page: page)
         }
+        
+    }
+}
+
+extension FollowersListVC: UISearchResultsUpdating {
+    func updateSearchResults(for searchController: UISearchController) {
         
     }
 }
