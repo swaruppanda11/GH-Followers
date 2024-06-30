@@ -7,6 +7,7 @@ class FollowersListVC: UIViewController {
     }
     
     var followers: [Follower] = []
+    var filterFollowers: [Follower] = []
     var page: Int = 1
     var hasMoreFollowers: Bool = true
     
@@ -63,7 +64,7 @@ class FollowersListVC: UIViewController {
                         return
                     }
                 }
-                self.UpdateData()
+                self.UpdateData(on: self.followers)
             case .failure(let error):
                 self.presentGFAlertOnMainThread(title: "Bad Stuff Happend", message: error.rawValue, buttonTitle: "Ok")
             }
@@ -78,7 +79,7 @@ class FollowersListVC: UIViewController {
         })
     }
     
-    func UpdateData() {
+    func UpdateData(on followers: [Follower]) {
         var snapshot = NSDiffableDataSourceSnapshot<Section, Follower>()
         snapshot.appendSections([.Main])
         snapshot.appendItems(followers)
@@ -90,7 +91,9 @@ class FollowersListVC: UIViewController {
     func configureSearchController() {
         let searchController = UISearchController()
         searchController.searchResultsUpdater = self
+        searchController.searchBar.delegate = self
         searchController.searchBar.placeholder = "Search for a username"
+        searchController.obscuresBackgroundDuringPresentation = false
         navigationItem.searchController = searchController
     }
 }
@@ -110,9 +113,17 @@ extension FollowersListVC: UICollectionViewDelegate {
     }
 }
 
-extension FollowersListVC: UISearchResultsUpdating {
+extension FollowersListVC: UISearchResultsUpdating, UISearchBarDelegate {
     func updateSearchResults(for searchController: UISearchController) {
-        
+        guard let filter = searchController.searchBar.text, !filter.isEmpty else {
+            return
+        }
+        filterFollowers = followers.filter{ $0.login.lowercased().contains(filter.lowercased()) }
+        UpdateData(on: filterFollowers)
+    }
+    
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        UpdateData(on: followers)
     }
 }
 
