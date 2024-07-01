@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A92C04442C282A64006B4E29 /* Error Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92C04432C282A64006B4E29 /* Error Message.swift */; };
+		A92C04442C282A64006B4E29 /* GFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92C04432C282A64006B4E29 /* GFError.swift */; };
 		A9741C3A2C285DA300724B7C /* FollowerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9741C392C285DA300724B7C /* FollowerCell.swift */; };
 		A9741C3C2C285E5600724B7C /* GFAvatarImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9741C3B2C285E5600724B7C /* GFAvatarImageView.swift */; };
 		A9741C3E2C2BEAE000724B7C /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9741C3D2C2BEAE000724B7C /* UIHelper.swift */; };
@@ -33,7 +33,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A92C04432C282A64006B4E29 /* Error Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Error Message.swift"; sourceTree = "<group>"; };
+		A92C04432C282A64006B4E29 /* GFError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFError.swift; sourceTree = "<group>"; };
 		A9741C392C285DA300724B7C /* FollowerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerCell.swift; sourceTree = "<group>"; };
 		A9741C3B2C285E5600724B7C /* GFAvatarImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFAvatarImageView.swift; sourceTree = "<group>"; };
 		A9741C3D2C2BEAE000724B7C /* UIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHelper.swift; sourceTree = "<group>"; };
@@ -74,7 +74,7 @@
 		A92C04422C282A53006B4E29 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				A92C04432C282A64006B4E29 /* Error Message.swift */,
+				A92C04432C282A64006B4E29 /* GFError.swift */,
 				A9741C3D2C2BEAE000724B7C /* UIHelper.swift */,
 			);
 			path = Utilities;
@@ -270,7 +270,7 @@
 				A9C6DC0D2C1D9247001529F9 /* SceneDelegate.swift in Sources */,
 				A9AD97442C22193A009DE5A7 /* NetworkManager.swift in Sources */,
 				A9741C3E2C2BEAE000724B7C /* UIHelper.swift in Sources */,
-				A92C04442C282A64006B4E29 /* Error Message.swift in Sources */,
+				A92C04442C282A64006B4E29 /* GFError.swift in Sources */,
 				A9C6DC2C2C1DCDE0001529F9 /* GFTextField.swift in Sources */,
 				A979F4C32C1F65B60076ED56 /* GFBodyLabel.swift in Sources */,
 			);
