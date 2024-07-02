@@ -11,6 +11,7 @@ class GFBodyLabel: UILabel {
 
     override init(frame: CGRect) {
         super.init(frame: frame)
+        Configure()
     }
     
     required init?(coder: NSCoder) { nil }

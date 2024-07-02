@@ -1,14 +1,14 @@
 //
-//  GFTitleLabel.swift
+//  GFSecondaryTitleLabel.swift
 //  GH Followers
 //
-//  Created by Swarup Panda on 16/06/24.
+//  Created by Swarup Panda on 02/07/24.
 //
 
 import UIKit
 
-class GFTitleLabel: UILabel {
-    
+class GFSecondaryTitleLabel: UILabel {
+
     override init(frame: CGRect) {
         super.init(frame: frame)
         Configure()
@@ -16,17 +16,16 @@ class GFTitleLabel: UILabel {
     
     required init?(coder: NSCoder) { nil }
     
-    init(textAlignment: NSTextAlignment, fontSize: CGFloat) {
+    init(fontSize: CGFloat) {
         super.init(frame: .zero)
-        self.textAlignment = textAlignment
-        self.font = UIFont.systemFont(ofSize: fontSize, weight: .bold)
+        font = UIFont.systemFont(ofSize: fontSize, weight: .medium)
         Configure()
     }
     
     private  func Configure() {
-        textColor = .label
+        textColor = .secondaryLabel
         adjustsFontSizeToFitWidth = true
-        minimumScaleFactor = 0.9
+        minimumScaleFactor = 0.90
         lineBreakMode = .byTruncatingTail
         translatesAutoresizingMaskIntoConstraints = false
     }
