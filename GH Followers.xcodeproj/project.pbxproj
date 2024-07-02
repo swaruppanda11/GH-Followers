@@ -139,12 +139,12 @@
 		A9C6DC092C1D9247001529F9 /* GH Followers */ = {
 			isa = PBXGroup;
 			children = (
+				A9C6DC182C1D9248001529F9 /* Info.plist */,
 				A92C04422C282A53006B4E29 /* Utilities */,
 				A9AD97422C221925009DE5A7 /* Managers */,
 				A9AD973D2C221475009DE5A7 /* Model */,
 				A9AD973C2C1F9E00009DE5A7 /* Extensions */,
 				A9C6DC2D2C1DCDE5001529F9 /* Components */,
-				A9C6DC182C1D9248001529F9 /* Info.plist */,
 				A9C6DC282C1DC9BD001529F9 /* Resources */,
 				A9C6DC272C1DC99F001529F9 /* Screens */,
 			);
