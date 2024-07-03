@@ -40,7 +40,7 @@ class GFItemInfoView: UIView {
             symbolImageView.heightAnchor.constraint(equalToConstant: 20),
             
             titleLabel.centerYAnchor.constraint(equalTo: symbolImageView.centerYAnchor),
-            titleLabel.trailingAnchor.constraint(equalTo: symbolImageView.trailingAnchor, constant: 12),
+            titleLabel.leadingAnchor.constraint(equalTo: symbolImageView.trailingAnchor, constant: 12),
             titleLabel.trailingAnchor.constraint(equalTo: self.trailingAnchor),
             titleLabel.heightAnchor.constraint(equalToConstant: 18),
             
@@ -51,7 +51,7 @@ class GFItemInfoView: UIView {
         ])
     }
     
-    func setItemInfoType(itemInfoType: ItemInfoType, withCount count: Int) {
+    func set(itemInfoType: ItemInfoType, withCount count: Int) {
         switch itemInfoType {
         case .repos:
             symbolImageView.image = UIImage(systemName: SFSymbols.repos)
