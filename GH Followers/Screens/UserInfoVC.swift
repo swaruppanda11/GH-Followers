@@ -7,6 +7,11 @@
 
 import UIKit
 
+protocol UserInfoVCDelegate: class {
+    func didTapGithubProfile()
+    func didTapGetFollowers()
+}
+
 class UserInfoVC: UIViewController {
     
     var username: String!
@@ -92,4 +97,17 @@ class UserInfoVC: UIViewController {
         childVC.view.frame = containerView.bounds
         childVC.didMove(toParent: self)
     }
+}
+
+extension UserInfoVC: UserInfoVCDelegate {
+    func didTapGithubProfile() {
+        // open the github page of the follower
+    }
+    
+    func didTapGetFollowers() {
+        // dismissvc
+        // tell follower list screen the new user
+    }
+    
+    
 }
