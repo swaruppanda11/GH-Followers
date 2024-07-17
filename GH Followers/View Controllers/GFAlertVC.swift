@@ -93,7 +93,7 @@ class GFAlertVC: UIViewController {
         ])
     }
     
-    @objc private func dismissVC() {
+    @objc func dismissVC() {
         dismiss(animated: true)
     }
 }
