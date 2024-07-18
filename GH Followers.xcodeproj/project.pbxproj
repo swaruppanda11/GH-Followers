@@ -29,6 +29,7 @@
 		A9AD973F2C221481009DE5A7 /* Follower.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AD973E2C221481009DE5A7 /* Follower.swift */; };
 		A9AD97412C22151A009DE5A7 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AD97402C22151A009DE5A7 /* User.swift */; };
 		A9AD97442C22193A009DE5A7 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9AD97432C22193A009DE5A7 /* NetworkManager.swift */; };
+		A9B6775F2C496A9B00D790C7 /* PersistanceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B6775E2C496A9B00D790C7 /* PersistanceManager.swift */; };
 		A9C6DC0B2C1D9247001529F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C6DC0A2C1D9247001529F9 /* AppDelegate.swift */; };
 		A9C6DC0D2C1D9247001529F9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C6DC0C2C1D9247001529F9 /* SceneDelegate.swift */; };
 		A9C6DC0F2C1D9247001529F9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C6DC0E2C1D9247001529F9 /* ViewController.swift */; };
@@ -64,6 +65,7 @@
 		A9AD973E2C221481009DE5A7 /* Follower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Follower.swift; sourceTree = "<group>"; };
 		A9AD97402C22151A009DE5A7 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		A9AD97432C22193A009DE5A7 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		A9B6775E2C496A9B00D790C7 /* PersistanceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistanceManager.swift; sourceTree = "<group>"; };
 		A9C6DC072C1D9247001529F9 /* GH Followers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GH Followers.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9C6DC0A2C1D9247001529F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A9C6DC0C2C1D9247001529F9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -150,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				A9AD97432C22193A009DE5A7 /* NetworkManager.swift */,
+				A9B6775E2C496A9B00D790C7 /* PersistanceManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -313,6 +316,7 @@
 				A9ACB8292C32A1E60043C773 /* UserInfoVC.swift in Sources */,
 				A9AD973F2C221481009DE5A7 /* Follower.swift in Sources */,
 				A9C6DC252C1DBC9E001529F9 /* FavouritesListVC.swift in Sources */,
+				A9B6775F2C496A9B00D790C7 /* PersistanceManager.swift in Sources */,
 				A9533CD02C38542A006EA8D2 /* String+Ext.swift in Sources */,
 				A979F4C12C1F64040076ED56 /* GFTitleLabel.swift in Sources */,
 				A9C6DC0D2C1D9247001529F9 /* SceneDelegate.swift in Sources */,
