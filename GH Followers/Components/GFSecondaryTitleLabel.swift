@@ -16,10 +16,9 @@ class GFSecondaryTitleLabel: UILabel {
     
     required init?(coder: NSCoder) { nil }
     
-    init(fontSize: CGFloat) {
-        super.init(frame: .zero)
+    convenience init(fontSize: CGFloat) {
+        self.init(frame: .zero)
         font = UIFont.systemFont(ofSize: fontSize, weight: .medium)
-        Configure()
     }
     
     private  func Configure() {

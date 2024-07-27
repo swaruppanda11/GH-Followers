@@ -16,12 +16,11 @@ class GFButton: UIButton {
     
     required init?(coder: NSCoder) { nil }
     
-    init(backgroundColor: UIColor, title: String) {
-        super.init(frame: .zero)
+    convenience init(backgroundColor: UIColor, title: String) {
+        self.init(frame: .zero)
         self.backgroundColor = backgroundColor
         self.setTitle(title, for: .normal)
-        configure()
-    } 
+    }
     
     private func configure() {
         layer.cornerRadius = 10
