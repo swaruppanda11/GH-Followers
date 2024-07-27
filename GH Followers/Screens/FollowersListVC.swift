@@ -20,6 +20,14 @@ class FollowersListVC: UIViewController {
     var collectionView: UICollectionView!
     var datasource: UICollectionViewDiffableDataSource<Section, Follower>!
     
+    init(username: String) {
+        super.init(nibName: nil, bundle: nil)
+        self.username = username
+        title = username
+    }
+    
+    required init?(coder: NSCoder) { nil }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
